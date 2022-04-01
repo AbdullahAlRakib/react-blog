@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Home = () => {
-const handleClick=(e)=>{
-    console.log('Clicked',e);
-}
+    const[name,setName]=useState('mario')
+    const handleClick=()=>{
+        setName('Luigi')
+    }
   return (
     <div className='home'>
-        
+        <h2>{name}</h2>       
        <button onClick={handleClick}>Click</button>
     </div>
   )
