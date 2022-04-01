@@ -1,9 +1,13 @@
 import React from 'react'
 
 const Home = () => {
+const handleClick=(e)=>{
+    console.log('Clicked',e);
+}
   return (
-    <div>
-        <h2>Home Page</h2>
+    <div className='home'>
+        
+       <button onClick={handleClick}>Click</button>
     </div>
   )
 }
